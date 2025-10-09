@@ -9,3 +9,6 @@ node_modules/
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# Expo local files
+.expo/
