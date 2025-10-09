@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 
-export const App = () => {
+export const ModuleListScreen = () => {
   // Initalisations --------------------------------------------
 
   // States ---------------------------------------------------
@@ -11,7 +11,7 @@ export const App = () => {
   // View -----------------------------------------------------
   return (
     <View style={styles.container}>
-      <Text>Hello World</Text>
+      <Text>List</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -26,4 +26,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default ModuleListScreen;
