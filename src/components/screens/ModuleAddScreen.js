@@ -1,7 +1,7 @@
 import { StyleSheet, Text } from "react-native";
 import Screen from "../layout/Screen";
 
-export const ModuleListScreen = () => {
+export const ModuleAddScreen = () => {
   // Initalisations --------------------------------------------
 
   // States ---------------------------------------------------
@@ -11,11 +11,11 @@ export const ModuleListScreen = () => {
   // View -----------------------------------------------------
   return (
     <Screen>
-      <Text>List</Text>
+      <Text>Add</Text>
     </Screen>
   );
 };
 
 const styles = StyleSheet.create({});
 
-export default ModuleListScreen;
+export default ModuleAddScreen;
