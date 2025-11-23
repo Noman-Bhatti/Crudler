@@ -1,8 +1,10 @@
-import { StyleSheet, Text } from "react-native";
+import { StyleSheet } from "react-native";
 import Screen from "../layout/Screen";
+import ModuleView from "../entity/modules/ModuleView.js";
 
-export const ModuleViewScreen = () => {
+export const ModuleViewScreen = ({ navigate, route }) => {
   // Initalisations --------------------------------------------
+  const { module } = route.params;
 
   // States ---------------------------------------------------
 
@@ -11,7 +13,7 @@ export const ModuleViewScreen = () => {
   // View -----------------------------------------------------
   return (
     <Screen>
-      <Text>View</Text>
+      <ModuleView module={module} />
     </Screen>
   );
 };

@@ -6,13 +6,16 @@ import RenderCount from "../UI/RenderCount.js";
 
 import initaialModules from "../../data/modules.js";
 
-const ModuleListScreen = () => {
+const ModuleListScreen = ({ navigation }) => {
   // Initalisations --------------------------------------------
 
   // States ---------------------------------------------------
   const [modules, setModules] = useState(initaialModules);
 
   // Handlers -------------------------------------------------
+  const handleSelect = (module) => {
+    navigation.navigate("ModuleViewScreen", { module });
+  };
   const handleDelete = (module) =>
     setModules(modules.filter((item) => item.ModuleID !== module.ModuleID));
 
@@ -20,7 +23,7 @@ const ModuleListScreen = () => {
   return (
     <Screen>
       <RenderCount />
-      <ModuleList modules={modules} onSelect={handleDelete} />
+      <ModuleList modules={modules} onSelect={handleSelect} />
     </Screen>
   );
 };
